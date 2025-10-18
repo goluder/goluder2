@@ -1,11 +1,9 @@
 #!/bin/bash
 
-echo "=== Проверяем что файлы скопировались ==="
-echo "Содержимое /etc/9hitsv3-linux64/config/:"
+echo "=== Финальная проверка файлов ==="
+ls -la /etc/9hitsv3-linux64/
+echo "=== Содержимое config ==="
 ls -la /etc/9hitsv3-linux64/config/
-
-echo "Содержимое /etc/9hitsv3-linux64/config/bot/:"
-ls -la /etc/9hitsv3-linux64/config/bot/
 
 # Health server
 start_health_server() {
