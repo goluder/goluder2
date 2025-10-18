@@ -1,6 +1,13 @@
 #!/bin/bash
 
-# Запускаем health server (для проверки что все работает)
+# Проверяем что все файлы на месте
+echo "=== Проверяем файлы в /etc/9hitsv3-linux64/ ==="
+ls -la /etc/9hitsv3-linux64/
+
+echo "=== Проверяем файлы в /etc/9hitsv3-linux64/config/ ==="
+ls -la /etc/9hitsv3-linux64/config/
+
+# Запускаем health server
 start_health_server() {
     while true; do
         {
@@ -14,11 +21,8 @@ start_health_server() {
     done
 }
 
-# Запускаем health server в фоне
 start_health_server &
-
-# Ждем 5 секунд чтобы все успело запуститься
 sleep 5
 
-# Запускаем основную программу 9hits
+echo "=== Запускаем 9hits ==="
 ./nh.sh --token=701db1d250a23a8f72ba7c3e79fb2c79 --mode=bot
