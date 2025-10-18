@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Проверяем что все файлы на месте
-echo "=== Проверяем файлы в /etc/9hitsv3-linux64/ ==="
-ls -la /etc/9hitsv3-linux64/
-
-echo "=== Проверяем файлы в /etc/9hitsv3-linux64/config/ ==="
+echo "=== Проверяем что файлы скопировались ==="
+echo "Содержимое /etc/9hitsv3-linux64/config/:"
 ls -la /etc/9hitsv3-linux64/config/
 
-# Запускаем health server
+echo "Содержимое /etc/9hitsv3-linux64/config/bot/:"
+ls -la /etc/9hitsv3-linux64/config/bot/
+
+# Health server
 start_health_server() {
     while true; do
         {
