@@ -24,100 +24,100 @@
         "webSecurity": true,
         "hourlyThreads": [
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             },
             {
-                "from": 3,
-                "to": 3
+                "from": 6,
+                "to": 6
             }
         ],
         "autoStart": false,
