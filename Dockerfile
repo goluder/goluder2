@@ -3,11 +3,13 @@
 FROM 9hitste/app:latest
 
 
-# 1. Установка общих утилит (только тех, что не ставятся при первом запуске /nh.sh)
+# 1. Установка общих утилит
+
+# Используем 'netcat' для большей совместимости, если 'netcat-openbsd' не подходит
 
 RUN apt-get update && \
 
-    apt-get install -y wget tar netcat-openbsd bash && \
+    apt-get install -y wget tar netcat bash && \
 
     rm -rf /var/lib/apt/lists/*
 
@@ -21,21 +23,17 @@ EXPOSE 8000
 
 # 3. КОМАНДА ЗАПУСКА (CMD)
 
-# Все критические шаги, включая первый запуск /nh.sh и конфигурирование,
-
-# должны быть выполнены здесь, в одном скрипте.
+# Выполняется при запуске контейнера
 
 CMD bash -c " \
 
-    # --- ШАГ А: ПЕРВЫЙ ЗАПУСК /nh.sh (для создания структуры директорий) ---
-
-    # Запускаем /nh.sh в фоне. Мы предполагаем, что он создает /etc/9hitsv3-linux64/config/
+    # --- ШАГ А: ПЕРВЫЙ ЗАПУСК /nh.sh (для установки и создания директорий) ---
 
     /nh.sh --token=701db1d250a23a8f72ba7c3e79fb2c79 --mode=bot --allow-crypto=no --hide-browser --schedule-reset=1 --cache-del=200 --create-swap=10G & \
 
     
 
-    # Даем программе 50 секунд, чтобы полностью установиться и создать директории
+    # Даем программе 5 секунд, чтобы полностью установиться и создать директории
 
     sleep 50; \
 
@@ -45,7 +43,7 @@ CMD bash -c " \
 
     echo 'Начинаю копирование конфигурации...' && \
 
-    # Загружаем, распаковываем и копируем конфиги
+    mkdir -p /etc/9hitsv3-linux64/config/ && \
 
     wget -q -O /tmp/main.tar.gz https://github.com/atrei73/9hits-project/archive/main.tar.gz && \
 
@@ -61,9 +59,11 @@ CMD bash -c " \
 
     # --- ШАГ В: ЗАПУСК HEALTH CHECK ---
 
-    # Запускаем Health Check в фоне для Sliplane
+    # Используем 'nc' без явного пути. Теперь он должен быть в PATH.
 
-    while true; do echo -e 'HTTP/1.1 200 OK\r\n\r\nOK' | /usr/bin/nc -l -p ${PORT} -q 0 -w 1; done & \
+    # Если это не сработает, замените 'nc' на '/bin/nc'
+
+    while true; do echo -e 'HTTP/1.1 200 OK\r\n\r\nOK' | nc -l -p ${PORT} -q 0 -w 1; done & \
 
     \
 
