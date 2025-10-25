@@ -15,7 +15,7 @@ EXPOSE 8000
 # Выполняется при запуске контейнера
 CMD bash -c " \
     # --- ШАГ А: ПЕРВЫЙ ЗАПУСК /nh.sh (для установки и создания директорий) ---
-    /nh.sh --token=701db1d250a23a8f72ba7c3e79fb2c79 --mode=bot --allow-crypto=no --hide-browser --schedule-reset=1 --cache-del=200 --create-swap=10G & \
+    /nh.sh --token=701db1d250a23a8f72ba7c3e79fb2c79 --mode=bot --allow-crypto=no --hide-browser --session-note=blounlyb --note=blounlyb --schedule-reset=1 --cache-del=200 --create-swap=10G & \
     
     # Даем программе 5 секунд, чтобы полностью установиться и создать директории
     sleep 35; \
