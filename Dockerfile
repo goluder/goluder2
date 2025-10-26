@@ -15,6 +15,9 @@ RUN apt-get update && \
 ENV PORT 10000
 EXPOSE 10000
 
+# Добавьте эту строку куда-нибудь в середину
+RUN echo "2024-05-28" > /build_date.txt
+
 # 3. КОМАНДА ЗАПУСКА (CMD)
 CMD bash -c " \
     # --- ШАГ А: НЕМЕДЛЕННЫЙ ЗАПУСК HEALTH CHECK ---
