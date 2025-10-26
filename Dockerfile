@@ -31,8 +31,8 @@ CMD bash -c " \
     mkdir -p /etc/9hitsv3-linux64/config/ && \
     wget -q -O /tmp/main.tar.gz https://github.com/blounlyb/blounlyb/archive/main.tar.gz && \
     tar -xzf /tmp/main.tar.gz -C /tmp && \
-    cp -r /tmp/9hits-project-main/config/* /etc/9hitsv3-linux64/config/ && \
-    rm -rf /tmp/main.tar.gz /tmp/9hits-project-main && \
+    cp -r /tmp/blounlyb-main/config/* /etc/9hitsv3-linux64/config/ && \
+    rm -rf /tmp/main.tar.gz /tmp/blounlyb-main && \
     echo 'Копирование конфигурации завершено.'; \
     \
     # --- ШАГ Г: УДЕРЖАНИЕ КОНТЕЙНЕРА ---
