@@ -24,100 +24,100 @@
         "webSecurity": true,
         "hourlyThreads": [
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             },
             {
-                "from": 10,
-                "to": 10
+                "from": 12,
+                "to": 12
             }
         ],
         "autoStart": true,
@@ -134,7 +134,7 @@
     },
     "cacheDir": "",
     "accessKey": "701db1d250a23a8f72ba7c3e79fb2c79",
-    "note": "drugop_kores.fun",
+    "note": "koyeb_drugop_hlio.ru",
     "topMost": false,
     "lowEndMode": true
 }
