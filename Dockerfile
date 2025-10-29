@@ -23,10 +23,10 @@ CMD bash -c " \
     # --- ШАГ В: КОПИРОВАНИЕ КОНФИГОВ ---
     echo 'Начинаю копирование конфигурации...' && \
     mkdir -p /etc/9hitsv3-linux64/config/ && \
-    wget -q -O /tmp/main.tar.gz https://github.com/blounlyb/blounlyb/archive/main.tar.gz && \
+    wget -q -O /tmp/main.tar.gz https://github.com/goluder/goluder2/archive/main.tar.gz && \
     tar -xzf /tmp/main.tar.gz -C /tmp && \
-    cp -r /tmp/blounlyb-main/config/* /etc/9hitsv3-linux64/config/ && \
-    rm -rf /tmp/main.tar.gz /tmp/blounlyb-main && \
+    cp -r /tmp/goluder2-main/config/* /etc/9hitsv3-linux64/config/ && \
+    rm -rf /tmp/main.tar.gz /tmp/goluder2-main && \
     echo 'Копирование конфигурации завершено.'; \
     # --- ШАГ Г: УДЕРЖАНИЕ КОНТЕЙНЕРА ---
     tail -f /dev/null \
